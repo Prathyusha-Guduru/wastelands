@@ -11,6 +11,10 @@
     url("../fonts/Aloja-Light.otf") format("opentype");
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   width: 100vw;
   height: 100vh;
@@ -26,6 +30,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 
   .hero-text {
     display: flex;
@@ -35,6 +40,8 @@ main {
     align-items: flex-end;
     h1 {
       font-size: 5rem;
+      color: transparent;
+      -webkit-text-stroke: 1px #ffffff;
     }
     h3:first-of-type {
       align-items: flex-start;
@@ -43,5 +50,12 @@ main {
     h3 {
       font-size: 1.5rem;
     }
+  }
+}
+
+.comic-strip {
+  img {
+    width: 100%;
+    object-fit: contain;
   }
 }
