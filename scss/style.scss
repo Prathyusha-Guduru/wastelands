@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "aloja";
+  src: url("../fonts/Aloja-Light.otf");
+  src: local("Aloja-Light"), local("Aloja-Light"),
+    url("../fonts/Aloja-Light.otf") format("opentype");
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-page {
+  background-image: url("../background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: "aloja";
+    align-items: flex-end;
+    h1 {
+      font-size: 5rem;
+    }
+    h3:first-of-type {
+      align-items: flex-start;
+      width: 100%;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
