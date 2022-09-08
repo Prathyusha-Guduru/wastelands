@@ -102,6 +102,15 @@ main {
     top: 230px;
     right: 280px;
   }
+
+  .mars {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    left: 35%;
+    top: 36%;
+  }
   .show {
     visibility: visible;
   }
