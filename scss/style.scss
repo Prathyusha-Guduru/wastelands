@@ -98,20 +98,63 @@ main {
     visibility: hidden;
     position: absolute;
     z-index: 2;
-    width: 200px;
-    top: 230px;
-    right: 280px;
+    width: 300px;
+    top: 150px;
+    right: 100px;
   }
 
   .mars {
     visibility: hidden;
     position: absolute;
     z-index: 2;
-    width: 120px;
+    width: 170px;
     left: 35%;
-    top: 36%;
+    top: 33%;
   }
   .show {
     visibility: visible;
+  }
+
+  .footer {
+    background-color: lawngreen;
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .faq {
+      width: 30%;
+      background-color: #f8efcf;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 13px;
+      margin: 10px 0;
+    }
+
+    // .faq-1 {
+    //   .faq-4 {
+    //     width: 40%;
+    //   }
+    // }
+
+    .line-2 {
+      display: flex;
+      width: 30%;
+      justify-content: space-between;
+      .faq-3,
+      .faq-2 {
+        background-color: #f8efcf;
+        border-radius: 13px;
+        width: 48%;
+        margin: 2px;
+        text-align: center;
+      }
+    }
   }
 }
