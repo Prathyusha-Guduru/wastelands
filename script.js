@@ -4,13 +4,22 @@ $(function () {
 });
 
 firstPoint = document.getElementById("first-point");
+thirdPoint = document.getElementById("third-point");
+
 boxy = document.getElementById("boxy");
+newspaper = document.querySelector(".newspaper");
 
 console.log(firstPoint);
 
 firstPoint.addEventListener("mouseover", () => {
-  console.log("YES");
+  newspaper.classList.toggle("show");
 });
+
+newspaper.addEventListener("mouseout", () => {
+  newspaper.classList.toggle("show");
+});
+
+// thirdPoint.addEventListener("mouseover",())
 
 boxy.addEventListener("mouseover", () => {
   console.log("YES");

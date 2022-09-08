@@ -85,6 +85,7 @@ main {
 }
 
 .comic-strip {
+  position: relative;
   img {
     width: 100%;
     object-fit: contain;
@@ -92,5 +93,16 @@ main {
 
   #first-point {
     cursor: pointer;
+  }
+  .newspaper {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    top: 230px;
+    right: 280px;
+  }
+  .show {
+    visibility: visible;
   }
 }
