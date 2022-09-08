@@ -113,17 +113,22 @@ main {
   }
 
   .footer {
+    // background-color: lawngreen;
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     z-index: 2;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    .faq {
+    .faqs {
+      // background-color: aqua;
       width: 30%;
+    }
+    .faq {
+      width: 100%;
       background-color: #f8efcf;
       display: flex;
       flex-direction: column;
@@ -144,7 +149,7 @@ main {
 
     .line-2 {
       display: flex;
-      width: 30%;
+      width: 100%;
       justify-content: space-between;
       .faq-3,
       .faq-2 {
@@ -173,6 +178,34 @@ main {
     .faq-4:hover {
       cursor: pointer;
       height: 100px;
+    }
+
+    .team-avatar {
+      width: 130px;
+      position: relative;
+      z-index: 2;
+    }
+    .team-left {
+      // background-color: aquamarine;
+      display: flex;
+      // width: 30%;
+    }
+    .team-right {
+      // background-color: cadetblue;
+      display: flex;
+      // flex-direction: column;
+    }
+    .team-member {
+      // background-color: lightcoral;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      color: #ffffff;
+      .name {
+        font-size: 12px;
+      }
     }
   }
 }
