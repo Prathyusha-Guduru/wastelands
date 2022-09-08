@@ -37,7 +37,6 @@ main {
   nav {
     position: absolute;
     top: 30px;
-    // background-color: lawngreen;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -53,8 +52,6 @@ main {
 
       img {
         width: 30px;
-        // margin: 10px 0;
-        // background-color: aqua;
       }
     }
     .mint-btn {
@@ -117,7 +114,7 @@ main {
 
   .footer {
     position: absolute;
-    bottom: 30px;
+    bottom: 100px;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -136,14 +133,14 @@ main {
       margin: 10px 0;
       font-family: "Dosis", sans-serif;
       color: #905353;
-      padding: 5px 0;
+      padding: 10px 20px;
+      font-weight: 800;
+      .faq-answer {
+        height: 100%;
+        font-weight: 400;
+        display: none;
+      }
     }
-
-    // .faq-1 {
-    //   .faq-4 {
-    //     width: 40%;
-    //   }
-    // }
 
     .line-2 {
       display: flex;
@@ -158,8 +155,24 @@ main {
         text-align: center;
         font-family: "Dosis", sans-serif;
         color: #905353;
-        padding: 5px 0;
+        padding: 10px 20px;
+        font-weight: 800;
       }
+    }
+
+    // HOVER EFFECTS
+    .faq-1:hover {
+      cursor: pointer;
+      height: 100px;
+      justify-content: flex-start;
+      .faq-answer {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .faq-4:hover {
+      cursor: pointer;
+      height: 100px;
     }
   }
 }

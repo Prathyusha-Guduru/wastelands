@@ -27,9 +27,3 @@ thirdPoint.addEventListener("mouseover", () => {
 mars.addEventListener("mouseout", () => {
   mars.classList.toggle("show");
 });
-
-// thirdPoint.addEventListener("mouseover",())
-
-// firstPoint.addEventListener("click", () => {
-//   console.log("YES");
-// });
