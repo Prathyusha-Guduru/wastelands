@@ -121,7 +121,9 @@ main {
     display: flex;
     // flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    // justify-content: space-between;
+    justify-content: center;
 
     .faqs {
       // background-color: aqua;
@@ -179,33 +181,42 @@ main {
       cursor: pointer;
       height: 100px;
     }
+  }
+}
 
-    .team-avatar {
-      width: 130px;
-      position: relative;
-      z-index: 2;
-    }
-    .team-left {
-      // background-color: aquamarine;
-      display: flex;
-      // width: 30%;
-    }
-    .team-right {
-      // background-color: cadetblue;
-      display: flex;
-      // flex-direction: column;
-    }
-    .team-member {
-      // background-color: lightcoral;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      color: #ffffff;
-      .name {
-        font-size: 12px;
-      }
+.team-section {
+  // background-color: lightcoral;
+  position: absolute;
+  bottom: 70px;
+  width: 85%;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  .team-avatar {
+    width: 130px;
+    position: relative;
+    z-index: 2;
+  }
+  .team-left {
+    display: flex;
+    // background-color: aqua;
+    // width: 30%;
+  }
+  .team-right {
+    // background-color: cadetblue;
+    display: flex;
+    // flex-direction: column;
+  }
+  .team-member {
+    // background-color: lightcoral;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+    .name {
+      font-size: 12px;
     }
   }
 }
