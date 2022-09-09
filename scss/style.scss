@@ -81,6 +81,15 @@ main {
   }
 }
 
+.sticky-bag {
+  // background-color: lightcoral;
+  width: 150px;
+  position: sticky;
+  bottom: 5px;
+  // right: -30px;
+  left: 86%;
+}
+
 .comic-strip {
   position: relative;
   img {
