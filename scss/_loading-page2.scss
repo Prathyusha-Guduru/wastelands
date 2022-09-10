@@ -30,6 +30,13 @@
       width: 180px;
     }
   }
+  .ch:nth-child(3) {
+    opacity: 50%;
+  }
+
+  .ch:nth-child(4) {
+    opacity: 50%;
+  }
 }
 
 .locked-list {
@@ -49,5 +56,5 @@
   position: absolute;
   bottom: 20px;
   z-index: 2;
-  right: 15 %;
+  right: 15%;
 }
