@@ -178,19 +178,22 @@ main {
       }
     }
 
-    .faq-1 {
+    .faq-1,
+    .faq-4 {
       transition-property: height;
       transition-duration: 2s;
       height: 40px;
       // background-color: lightblue;
     }
     // HOVER EFFECTS
-    .faq-1:hover {
+
+    .faq-3:hover {
+      cursor: pointer;
+    }
+    .faq-1:hover,
+    .faq-4:hover {
       cursor: pointer;
       height: 100px;
-      // transition-property: height;
-      // transition-duration: 3s;
-      // background-color: lawngreen;
       justify-content: flex-start;
       .faq-answer {
         display: flex;
