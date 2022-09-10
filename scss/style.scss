@@ -84,7 +84,7 @@ main {
 .sticky-bag {
   // background-color: lightcoral;
   width: 150px;
-  position: sticky;
+  position: fixed;
   bottom: 5px;
   // right: -30px;
   left: 86%;
@@ -190,16 +190,20 @@ main {
       cursor: pointer;
       height: 100px;
     }
+
+    .faq-3:hover {
+    }
   }
 }
 
 .team-section {
   // background-color: lightcoral;
+
   position: absolute;
   bottom: 70px;
   width: 85%;
   padding-left: 50px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   .team-avatar {
     width: 130px;

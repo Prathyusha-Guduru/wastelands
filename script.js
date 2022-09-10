@@ -1,7 +1,7 @@
-$(function () {
-  console.log("happening");
-  $(".map").maphilight();
-});
+// $(function () {
+//   console.log("happening");
+//   $(".map").maphilight();
+// });
 
 firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
@@ -36,6 +36,14 @@ thirdPoint.addEventListener("mouseover", () => {
 
 mars.addEventListener("mouseout", () => {
   mars.classList.toggle("show");
+});
+
+document.querySelector(".faq-3").addEventListener("mouseover", () => {
+  document.querySelector(".team-section").style.display = "flex";
+});
+
+document.querySelector(".faq-3").addEventListener("mouseout", () => {
+  document.querySelector(".team-section").style.display = "none";
 });
 
 // function scrollPos() {
