@@ -1,0 +1,53 @@
+.chapter-tables {
+  //   background-color: lawngreen;
+  position: absolute;
+  //   top: 0;
+  display: flex;
+  //   width: 50%;
+  width: 55%;
+  height: 60%;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.chapter-list {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 49%;
+  margin-right: 40px;
+  border-radius: 100px;
+  border: 8px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  h2 {
+    font-size: 30px;
+  }
+  ul {
+    margin: 8px 0;
+    img {
+      width: 180px;
+    }
+  }
+}
+
+.locked-list {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 49%;
+  border-radius: 100px;
+  border: 8px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100px;
+  }
+}
+
+.radio-img {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  right: 15 %;
+}
