@@ -105,10 +105,10 @@ main {
   }
   .newspaper {
     opacity: 0%;
-    transition-duration: 1s;
+    transition-duration: 0.25s;
     position: absolute;
     z-index: 2;
-    width: 300px;
+    width: 350px;
     top: 150px;
     right: 100px;
   }
@@ -121,7 +121,7 @@ main {
     width: 170px;
     left: 35%;
     top: 33%;
-    transition-duration: 1s;
+    transition-duration: 0.25s;
     // transition-property: visible;
   }
   .show {
@@ -158,11 +158,12 @@ main {
       color: #905353;
       padding: 10px 20px;
       font-weight: 800;
+      font-size: 20px;
       .faq-answer {
         height: 100%;
         font-weight: 400;
         transition-property: display;
-        transition-duration: 2s;
+        transition-duration: 0.25s;
         display: none;
       }
     }
@@ -182,13 +183,14 @@ main {
         color: #905353;
         padding: 10px 20px;
         font-weight: 800;
+        font-size: 20px;
       }
     }
 
     .faq-1,
     .faq-4 {
       transition-property: height;
-      transition-duration: 2s;
+      transition-duration: 0.1s;
       height: 40px;
       // background-color: lightblue;
     }
@@ -202,6 +204,9 @@ main {
       cursor: pointer;
       height: 100px;
       justify-content: flex-start;
+      .go-away-faq {
+        display: none;
+      }
       .faq-answer {
         display: flex;
         align-items: center;
@@ -246,8 +251,8 @@ main {
     // background-color: lawngreen;
     opacity: 100%;
     animation-name: avatar;
-    animation-delay: 0.5s;
-    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }
@@ -256,8 +261,8 @@ main {
     // background-color: lawngreen;
     opacity: 100%;
     animation-name: avatar;
-    animation-delay: 1s;
-    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }
@@ -266,8 +271,8 @@ main {
     // background-color: lawngreen;
     opacity: 100%;
     animation-name: avatar;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }
@@ -276,8 +281,8 @@ main {
     // background-color: lawngreen;
     opacity: 100%;
     animation-name: avatar;
-    animation-delay: 2s;
-    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }
@@ -286,8 +291,8 @@ main {
     // background-color: lawngreen;
     opacity: 100%;
     animation-name: avatar;
-    animation-delay: 2.5s;
-    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }
@@ -310,3 +315,16 @@ main {
     }
   }
 }
+
+// TODO :
+// Animation delay for avatars
+// bag should end at last faq
+// Co-ordinates
+// Font size increase in faqs
+// Remove faq question on hover
+// Hover elevation on chapter buttons
+// Complete hosting
+// aspect ratio for main landing page
+// z-index for lock (GIF)
+// Hero text and spacing
+// Twitter button

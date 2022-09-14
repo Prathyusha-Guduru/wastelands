@@ -13,30 +13,30 @@ audio = document.querySelector(".radio");
 
 console.log(firstPoint);
 
-// firstPoint.addEventListener("mouseover", () => {
-//   newspaper.classList.toggle("show");
-// });
+firstPoint.addEventListener("mouseover", () => {
+  newspaper.classList.toggle("show");
+});
 
-// secondPoint.addEventListener("mouseover", () => {
-//   audio.play();
-// });
+secondPoint.addEventListener("mouseover", () => {
+  audio.play();
+});
 
-// secondPoint.addEventListener("mouseout", () => {
-//   audio.pause();
-// });
+secondPoint.addEventListener("mouseout", () => {
+  audio.pause();
+});
 
-// newspaper.addEventListener("mouseout", () => {
-//   newspaper.classList.toggle("show");
-// });
+newspaper.addEventListener("mouseout", () => {
+  newspaper.classList.toggle("show");
+});
 
-// thirdPoint.addEventListener("mouseover", () => {
-//   mars.classList.toggle("show");
-//   console.log("thisrd point");
-// });
+thirdPoint.addEventListener("mouseover", () => {
+  mars.classList.toggle("show");
+  console.log("thisrd point");
+});
 
-// mars.addEventListener("mouseout", () => {
-//   mars.classList.toggle("show");
-// });
+mars.addEventListener("mouseout", () => {
+  mars.classList.toggle("show");
+});
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
   document.querySelector(".team-section").style.display = "flex";
