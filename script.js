@@ -7,6 +7,7 @@ firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
 secondPoint = document.getElementById("second-point");
 bag = document.querySelector(".sticky-bag");
+mapPopup = document.querySelector(".map-popup");
 
 newspaper = document.querySelector(".newspaper");
 mars = document.querySelector(".mars");
@@ -47,6 +48,15 @@ document.querySelector(".faq-3").addEventListener("mouseout", () => {
   document.querySelector(".team-section").style.display = "none";
 });
 
+bag.addEventListener("click", () => {
+  mapPopup.classList.toggle("popup-show");
+  console.log("bag clicked");
+});
+
+document.querySelector(".overlay").addEventListener("click", () => {
+  mapPopup.classList.toggle("popup-show");
+  console.log("wewwrbwrrbwrb");
+});
 // function scrollPos() {
 //   var myDiv = document.querySelector(".team-section").scrollTop;
 //   if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {

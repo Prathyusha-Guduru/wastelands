@@ -328,6 +328,27 @@ main {
   }
 }
 
+.popup-show {
+  display: none;
+}
+
+.map-popup {
+  .map-img {
+    width: 70%;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    z-index: 4;
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
 // TODO :
 // Animation delay for avatars
 // bag should end at last faq
