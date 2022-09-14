@@ -143,6 +143,10 @@ main {
 
     .faqs {
       // background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 30%;
     }
     .faq {
@@ -170,8 +174,8 @@ main {
 
     .line-2 {
       display: flex;
-      width: 100%;
-      justify-content: space-between;
+      width: 90%;
+      // background-color: lawngreen;
       .faq-3,
       .faq-2 {
         background-color: #f8efcf;
@@ -184,6 +188,14 @@ main {
         padding: 10px 10px;
         font-weight: 800;
         font-size: 20px;
+        transition-duration: 0.1s;
+      }
+
+      .faq-2:hover {
+        cursor: pointer;
+        span {
+          text-decoration: line-through;
+        }
       }
     }
 
