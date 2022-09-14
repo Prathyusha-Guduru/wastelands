@@ -6,12 +6,13 @@ $(function () {
 firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
 secondPoint = document.getElementById("second-point");
+bag = document.querySelector(".sticky-bag");
 
 newspaper = document.querySelector(".newspaper");
 mars = document.querySelector(".mars");
 audio = document.querySelector(".radio");
 
-console.log(firstPoint);
+console.log(bag);
 
 firstPoint.addEventListener("mouseover", () => {
   newspaper.classList.toggle("show");
