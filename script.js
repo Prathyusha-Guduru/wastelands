@@ -3,6 +3,7 @@ $(function () {
   $(".map").maphilight();
 });
 
+body = document.querySelector("body");
 firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
 secondPoint = document.getElementById("second-point");
@@ -14,6 +15,11 @@ mars = document.querySelector(".mars");
 audio = document.querySelector(".radio");
 
 console.log(bag);
+
+body.addEventListener("scroll", (e) => {
+  console.log("vwb");
+  console.log(body.scrollTop);
+});
 
 firstPoint.addEventListener("mouseover", () => {
   newspaper.classList.toggle("show");
@@ -57,6 +63,7 @@ document.querySelector(".overlay").addEventListener("click", () => {
   mapPopup.classList.toggle("popup-show");
   console.log("wewwrbwrrbwrb");
 });
+
 // function scrollPos() {
 //   var myDiv = document.querySelector(".team-section").scrollTop;
 //   if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {
