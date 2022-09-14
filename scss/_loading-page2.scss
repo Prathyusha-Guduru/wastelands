@@ -28,6 +28,15 @@
     margin: 8px 0;
     img {
       width: 180px;
+      transition-duration: 500ms;
+    }
+    img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .ch-lock:hover {
+      cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
+        auto;
     }
   }
   .ch:nth-child(3) {
@@ -54,6 +63,7 @@
 
 .radio-img {
   position: absolute;
+  width: 300px;
   bottom: 20px;
   z-index: 2;
   right: 15%;
