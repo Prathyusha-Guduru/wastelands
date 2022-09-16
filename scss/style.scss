@@ -45,13 +45,15 @@ main {
     justify-content: flex-end;
     align-items: center;
     margin-right: 50px;
+    // background-color: lightcoral;
 
     a {
       cursor: pointer;
       margin: 0 20px;
       border: 2.5px solid #ffffff;
-      border-radius: 30px;
-      padding: 5px;
+      border-radius: 18px;
+      padding: 5px 8px;
+      // background-color: lawngreen;
 
       img {
         width: 30px;
@@ -61,6 +63,10 @@ main {
       text-decoration: none;
       color: #ffffff;
       padding: 5px 15px;
+      font-size: 20px;
+      letter-spacing: 3px;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -86,7 +92,7 @@ main {
 
 .sticky-bag {
   // background-color: lightcoral;
-  width: 150px;
+  width: 120px;
   position: fixed;
   bottom: 5px;
   // right: -30px;
@@ -358,7 +364,13 @@ main {
 
 // Co-ordinates
 
-// Hover elevation on chapter buttons
 // aspect ratio for main landing page
 // z-index for lock (GIF)
-// Hero text and spacing
+// Hero text and spacing (chapter 1, spacking should be increased)
+// Lock cursor in the 2nd box of 2nd landing page
+// Make the lock white on hover
+// Decrease the border radius
+// ZOOM disable
+// make the map- image
+// make the faq's extrabold
+// overlay for lock
