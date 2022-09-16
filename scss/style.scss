@@ -75,17 +75,32 @@ main {
     flex-direction: column;
     color: #ffffff;
     align-items: flex-end;
+    // background-color: lawngreen;
     h1 {
-      font-size: 5rem;
+      font-size: 5.5rem;
       color: transparent;
       -webkit-text-stroke: 1px #ffffff;
+      // background-color: aquamarine;
+      margin: 0;
     }
+
+    h3 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      // background-color: lightgray;
+      position: relative;
+      // left: 30px;
+    }
+
     h3:first-of-type {
       align-items: flex-start;
       width: 100%;
+      right: 40px;
+      top: 27px;
     }
-    h3 {
-      font-size: 1.5rem;
+    h3:nth-of-type(2) {
+      left: 30px;
+      bottom: 15px;
     }
   }
 }
