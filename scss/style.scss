@@ -110,6 +110,7 @@ main {
   width: 120px;
   position: fixed;
   bottom: 70px;
+  z-index: 5;
   // right: -30px;
   left: 86%;
 }
@@ -157,6 +158,7 @@ main {
     z-index: 2;
     width: 100%;
     display: flex;
+    // background-color: red;
     // flex-direction: column;
     align-items: center;
     // justify-content: space-evenly;
@@ -169,10 +171,10 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 30%;
+      width: 100%;
     }
     .faq {
-      width: 100%;
+      width: 25%;
       background-color: #f8efcf;
       display: flex;
       flex-direction: column;
@@ -196,7 +198,7 @@ main {
 
     .line-2 {
       display: flex;
-      width: 90%;
+      width: 23%;
       // background-color: lawngreen;
       .faq-3,
       .faq-2 {
@@ -263,19 +265,24 @@ main {
 }
 
 .team-section {
-  background-color: lightcoral;
+  // background-color: lightcoral;
   position: absolute;
   bottom: 70px;
-  width: 85%;
-  padding-left: 50px;
+  width: 100%;
+  padding: 0 85px;
   display: none;
   justify-content: space-between;
+
+  .team-member {
+    // background-color: lightgreen;
+    // margin: 0 10px;
+  }
   .team-avatar {
     // width: 130px;
     transform: scale(0.75);
     position: relative;
     z-index: 2;
-    background-color: aqua;
+    // background-color: aqua;
     display: flex;
     align-items: flex-end;
     padding-bottom: 5px;
@@ -284,7 +291,8 @@ main {
   .team-left {
     display: flex;
     visibility: visible;
-    background-color: rgb(255, 184, 97);
+    // background-color: rgb(255, 184, 97);
+    // padding-left: 50px;
   }
 
   .team-member-left:nth-child(1) {
@@ -338,13 +346,17 @@ main {
   }
 
   .team-right {
-    background-color: cadetblue;
+    // background-color: cadetblue;
     display: flex;
+    position: relative;
+    right: 8%;
+    // padding-left: 30%;
+    padding-left: 0px;
     // flex-direction: column;
   }
   .team-member {
     // background-color: lightcoral;
-    margin: 10px;
+    // margin: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
