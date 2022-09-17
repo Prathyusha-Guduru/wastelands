@@ -1,3 +1,17 @@
+.full-screen {
+  background-image: url("../images/overlay-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
 .chapter-tables {
   //   background-color: lawngreen;
   position: absolute;
@@ -58,7 +72,20 @@
   align-items: center;
   img {
     width: 100px;
+    z-index: 1;
   }
+
+  .opacity-class {
+    opacity: 0.5;
+  }
+  .opacity-class:hover {
+    opacity: 0.7;
+  }
+}
+
+.locked-list:hover {
+  cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
+    auto;
 }
 
 .radio-img {
