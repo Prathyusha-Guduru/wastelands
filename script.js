@@ -71,6 +71,10 @@ document.querySelector(".overlay").addEventListener("click", () => {
   console.log("wewwrbwrrbwrb");
 });
 
+mapPopup.addEventListener("click", () => {
+  mapPopup.classList.toggle("popup-show");
+  console.log("mappopup");
+});
 // function scrollPos() {
 //   var myDiv = document.querySelector(".team-section").scrollTop;
 //   if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {
