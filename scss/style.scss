@@ -109,12 +109,13 @@ main {
   // background-color: lightcoral;
   width: 120px;
   position: fixed;
-  bottom: 5px;
+  bottom: 70px;
   // right: -30px;
   left: 86%;
 }
 
 .comic-strip {
+  position: absolute;
   position: relative;
   img {
     width: 100%;
@@ -181,7 +182,7 @@ main {
       margin: 10px 0;
       font-family: "Dosis", sans-serif;
       color: #905353;
-      padding: 10px 10px;
+      padding: 5px 10px;
       font-weight: 800;
       font-size: 20px;
       .faq-answer {
@@ -202,11 +203,11 @@ main {
         background-color: #f8efcf;
         border-radius: 13px;
         width: 48%;
-        margin: 2px;
+        margin: 0 5px;
         text-align: center;
         font-family: "Dosis", sans-serif;
         color: #905353;
-        padding: 10px 10px;
+        padding: 5px 10px;
         font-weight: 800;
         font-size: 20px;
         transition-duration: 0.1s;
@@ -262,8 +263,7 @@ main {
 }
 
 .team-section {
-  // background-color: lightcoral;
-
+  background-color: lightcoral;
   position: absolute;
   bottom: 70px;
   width: 85%;
@@ -271,13 +271,20 @@ main {
   display: none;
   justify-content: space-between;
   .team-avatar {
-    width: 130px;
+    // width: 130px;
+    transform: scale(0.75);
     position: relative;
     z-index: 2;
+    background-color: aqua;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    // height: 130px;
   }
   .team-left {
     display: flex;
     visibility: visible;
+    background-color: rgb(255, 184, 97);
   }
 
   .team-member-left:nth-child(1) {
@@ -331,7 +338,7 @@ main {
   }
 
   .team-right {
-    // background-color: cadetblue;
+    background-color: cadetblue;
     display: flex;
     // flex-direction: column;
   }
@@ -375,6 +382,18 @@ main {
   top: 3px;
 }
 
+#first-point {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  // background-color: rgb(255, 19, 19);
+  cursor: pointer;
+  // visibility: hidden;
+}
+
 // TODO :
 
 // Co-ordinates
@@ -389,3 +408,12 @@ main {
 // make the map- image
 // make the faq's extrabold
 // overlay for lock
+
+// NEW TODO
+// Merchant with window
+// Copyright (preferably corner, left bottom)
+// Change 1st and 2nd loading screen bg to the home.html
+// lock hover effect, lock emoji cursor
+// z-index of the lock  and add a hover effect
+// Buy a domain
+// Social media links
