@@ -5,8 +5,8 @@ $(function () {
 
 body = document.querySelector("body");
 firstPoint = document.getElementById("first-point");
-// thirdPoint = document.getElementById("third-point");
-// secondPoint = document.getElementById("second-point");
+thirdPoint = document.getElementById("third-point");
+secondPoint = document.getElementById("second-point");
 bag = document.querySelector(".sticky-bag");
 mapPopup = document.querySelector(".map-popup");
 
@@ -32,26 +32,26 @@ firstPoint.addEventListener("click", () => {
   console.log("firsttttttss");
 });
 
-// secondPoint.addEventListener("mouseover", () => {
-//   audio.play();
-// });
+secondPoint.addEventListener("mouseover", () => {
+  audio.play();
+});
 
-// secondPoint.addEventListener("mouseout", () => {
-//   audio.pause();
-// });
+secondPoint.addEventListener("mouseout", () => {
+  audio.pause();
+});
 
 newspaper.addEventListener("mouseout", () => {
   newspaper.classList.remove("show");
 });
 
-// thirdPoint.addEventListener("mouseover", () => {
-//   mars.classList.toggle("show");
-//   console.log("thisrd point");
-// });
+thirdPoint.addEventListener("mouseover", () => {
+  mars.classList.toggle("show");
+  console.log("thisrd point");
+});
 
-// mars.addEventListener("mouseout", () => {
-//   mars.classList.toggle("show");
-// });
+mars.addEventListener("mouseout", () => {
+  mars.classList.remove("show");
+});
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
   document.querySelector(".team-section").style.display = "flex";

@@ -130,9 +130,9 @@ main {
     transition-duration: 0.25s;
     position: absolute;
     z-index: 2;
-    width: 350px;
-    top: 150px;
-    right: 100px;
+    width: 430px;
+    top: 120px;
+    right: 20px;
   }
 
   .mars {
@@ -382,18 +382,35 @@ main {
   top: 3px;
 }
 
-#first-point {
+.invisible {
   position: absolute;
-  top: 10%;
-  right: 20%;
   z-index: 2;
   width: 100px;
-  height: 100px;
   // background-color: rgb(255, 19, 19);
   cursor: pointer;
   // visibility: hidden;
 }
 
+#first-point {
+  height: 100px;
+  top: 10%;
+  right: 20%;
+}
+
+#second-point {
+  height: 80px;
+  top: 21%;
+  left: 33%;
+  // background-color: blueviolet;
+}
+
+#third-point {
+  height: 70px;
+  width: 50px;
+  top: 38.5%;
+  left: 36%;
+  // background-color: lawngreen;
+}
 // TODO :
 
 // Co-ordinates
