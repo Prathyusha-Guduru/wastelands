@@ -75,8 +75,3 @@ mapPopup.addEventListener("click", () => {
   mapPopup.classList.toggle("popup-show");
   console.log("mappopup");
 });
-
-// RESPONSIVE SITE
-if (window.innerHeight > window.innerWidth) {
-  alert("Please use Landscape!");
-}
