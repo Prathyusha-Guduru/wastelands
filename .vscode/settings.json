@@ -1,0 +1,13 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "./css/",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "debug.internalConsoleOptions": "neverOpen"
+}
