@@ -272,13 +272,15 @@ main {
 }
 
 .team-section {
-  // background-color: lightcoral;
+  // background-color: brown;
   position: absolute;
   bottom: 70px;
   width: 100%;
   padding: 0 85px;
   display: none;
   justify-content: space-between;
+  // align-items: flex-end;
+  max-height: 40px;
 
   // .team-member {
   //   // background-color: lightgreen;
@@ -298,6 +300,8 @@ main {
   .team-left {
     display: flex;
     visibility: visible;
+    position: relative;
+    top: 40px;
     // background-color: rgb(255, 184, 97);
     // padding-left: 50px;
   }
@@ -310,6 +314,8 @@ main {
     animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    position: relative;
+    top: 10px;
   }
 
   .team-member-left:nth-child(2) {
@@ -340,6 +346,7 @@ main {
     animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    transform: scale(0.5);
   }
 
   .team-member-right:nth-child(2) {
@@ -350,16 +357,26 @@ main {
     animation-duration: 0.25;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    transform: scale(0.47);
+    // background-color: #905353;
+    position: relative;
+    right: 30%;
+    top: 10px;
   }
 
   .team-right {
     // background-color: cadetblue;
-    display: flex;
     position: relative;
-    right: 8%;
+    left: 15%;
+    top: 50px;
+    display: flex;
+    // position: relative;
+    // right: 8%;
     // padding-left: 30%;
     padding-left: 0px;
     // flex-direction: column;
+    // align-items: flex-end;
+    // background-color: aqua;
   }
   .team-member {
     // background-color: lightcoral;
