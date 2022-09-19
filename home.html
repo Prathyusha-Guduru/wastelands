@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wasterlands</title>
+
     <!-- DOSIS FONTSTYLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap"
       rel="stylesheet"
     />
+
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
     <main>
@@ -185,9 +190,19 @@
         <a class="invisible" id="third-point"></a>
       </div>
       <img src="images/bag.png" class="sticky-bag" alt="" />
-      <div class="map-popup popup-show">
-        <div class="overlay"></div>
-        <img src="images/map-popup.png" class="map-img" alt="" />
+      <div class="map-popup">
+        <div class="map-close-box"></div>
+        <!-- <div class="img-magnifier-glass">
+          <img src="images/search.png" alt="" />
+        </div> -->
+        <img src="images/map-popup.png" class="map-img" id="map-img" alt="" />
+      </div>
+
+      <div class="mobile-orientation-modal">
+        <div class="box">
+          <p>Please rotate your mobile to landscape mode</p>
+          <img src="images/mobile-phone.png" alt="" />
+        </div>
       </div>
     </main>
 
