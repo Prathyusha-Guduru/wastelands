@@ -12,6 +12,7 @@ mapPopup = document.querySelector(".map-popup");
 newspaper = document.querySelector(".newspaper");
 mars = document.querySelector(".mars");
 audio = document.querySelector(".radio");
+bgOverlay = document.querySelector(".overlay");
 
 body.addEventListener("scroll", (e) => {
   console.log("vwb");
@@ -64,12 +65,17 @@ document.querySelector(".faq-3").addEventListener("mouseout", () => {
 
 bag.addEventListener("click", () => {
   mapPopup.style.display = "unset";
+  bgOverlay.classList.remove("displayNone");
 });
 
 document.querySelector(".map-close-box").addEventListener("click", () => {
   mapPopup.style.display = "none";
 });
 
+bgOverlay.addEventListener("click", () => {
+  mapPopup.style.display = "none";
+  bgOverlay.classList.add("displayNone");
+});
 // mapPopup.addEventListener("click", () => {
 //   mapPopup.classList.toggle("popup-show");
 //   console.log("mappopup");
@@ -121,6 +127,8 @@ function magnify(imgID, zoom) {
 
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - w / zoom) {
+      // magnifyingDiv.classList.toggle("displayNone");
+      console.log("horizontal ");
       x = img.width - w / zoom;
     }
     if (x < w / zoom) {
@@ -173,7 +181,7 @@ function magnify(imgID, zoom) {
   }
 }
 
-magnify("map-img", 1);
+magnify("map-img", 3);
 
 // MOBILE LANDSCAPE CHECK
 
@@ -207,6 +215,12 @@ console.log("small screen", mobileCheck());
 // });
 
 mapImg = document.querySelector(".map-img");
+
+magnifyingDiv = document.querySelector(".img-magnifier-glass");
+let c = 0;
 mapImg.addEventListener("mouseout", () => {
-  console.log("mouseout");
+  // magnifyingDiv.style.visibility = "hidden";
+  // magnifyingDiv.classList.toggle("displayNone");
+  c = c + 1;
+  console.log(c);
 });

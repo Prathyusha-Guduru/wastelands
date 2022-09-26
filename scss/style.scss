@@ -415,12 +415,20 @@ main {
     position: absolute;
     top: 1px;
     right: 3px;
-
+    // background-color: lawngreen;
     width: 80px;
     height: 80px;
     cursor: pointer;
     // background-color: rgba(144, 238, 144, 0.6);
   }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  top: 0;
 }
 
 .twitter-img {
@@ -511,7 +519,7 @@ main {
 // Magnifying glass
 .img-magnifier-glass {
   position: absolute;
-  transform: translate(-100px, -100px);
+  transform: translate(-150px, -150px);
   // opacity: 60%;
 
   border: 3px solid #000;
@@ -519,7 +527,7 @@ main {
   cursor: none;
   width: 200px;
   height: 200px;
-  background-size: 535%;
+  background-size: 600%;
 
   .magnifying-glass-img {
     height: 260px;
@@ -527,6 +535,10 @@ main {
     position: relative;
     transform: translate(-5px, -5px);
   }
+}
+
+.displayNone {
+  display: none;
 }
 
 .mobile-orientation-modal {
