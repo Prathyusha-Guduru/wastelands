@@ -27,9 +27,14 @@ firstPoint.addEventListener("click", () => {
   newspaper.classList.toggle("show");
 });
 
-secondPoint.addEventListener("mouseover", () => {
-  audio.play();
-});
+secondPoint.addEventListener(
+  "mouseover",
+  () => {
+    console.log("radio hover");
+    audio.play();
+  },
+  false
+);
 
 secondPoint.addEventListener("mouseout", () => {
   audio.pause();
@@ -200,3 +205,8 @@ console.log("small screen", mobileCheck());
 // addEventListener("deviceorientation", (event) => {
 //   console.log("orientation changes", event);
 // });
+
+mapImg = document.querySelector(".map-img");
+mapImg.addEventListener("mouseout", () => {
+  console.log("mouseout");
+});
