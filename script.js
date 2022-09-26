@@ -31,6 +31,7 @@ firstPoint.addEventListener("click", () => {
 secondPoint.addEventListener(
   "mouseover",
   () => {
+    secondPoint.click();
     console.log("radio hover");
     audio.play();
   },
