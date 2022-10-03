@@ -129,7 +129,7 @@ function magnify(imgID, zoom) {
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - w / zoom) {
       // magnifyingDiv.classList.toggle("displayNone");
-      console.log("horizontal ");
+      // console.log("horizontal ");
       x = img.width - w / zoom;
     }
     if (x < w / zoom) {
@@ -182,7 +182,7 @@ function magnify(imgID, zoom) {
   }
 }
 
-magnify("map-img", 3);
+magnify("map-img", 10);
 
 // MOBILE LANDSCAPE CHECK
 
