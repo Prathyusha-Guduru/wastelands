@@ -517,6 +517,10 @@ main {
   .footer {
     display: none !important;
   }
+
+  .faq-question {
+    background-color: lawngreen;
+  }
 }
 
 // Magnifying glass
@@ -617,56 +621,115 @@ main {
     width: 100px !important;
   }
 
-  .map {
-    width: 70px !important;
+  .faqs {
+    // width: 30%;
+
+    .faq {
+      // background-color: lightblue !important;
+      width: 30% !important;
+      height: auto !important;
+    }
+
+    .line-2 {
+      width: 30% !important;
+    }
+    .faq-answer {
+      font-size: 10px;
+    }
   }
 
-  .faqs {
-    position: relative;
-    top: 50px;
-    // background-color: lawngreen;
-
-    .faq-answer {
-      font-size: 0.5rem;
-    }
-    .faq {
-      width: 50% !important;
-      padding: 2px;
-      font-size: 12rem !important;
-      height: 20rem !important;
-    }
-    .line-2 {
-      width: 50% !important;
-    }
-    .faq-2,
-    .faq-3 {
-      width: 50% !important;
-      font-size: 12rem !important;
-      height: 20rem !important;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .faq-question {
+    font-size: 10px;
   }
 
   .team-section {
     // background-color: aqua;
-    justify-content: space-between;
+    position: absolute;
+    bottom: 120px;
+    padding: 70px;
+    // transform: scale(1.02) !important;
+    justify-content: center;
+    // align-items: top;
     transform: scale(0.7);
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(0, 0, 0, 0.823);
     border-radius: 70px;
 
     .team-left {
       // background-color: aquamarine;
       // margin-left: 60px;
+      // position: absolute;
+      // inset: 0;
+      margin: 0px !important;
     }
 
     .team-right {
       // background-color: blueviolet;
-      margin-left: 50px;
+      // margin-left: 50px;
+      // position: absolute;
+      // inset: 0;
+      margin: 0px !important;
     }
   }
+
+  // .map {
+  //   width: 70px !important;
+  // }
+
+  // .comic-strip {
+  //   background-color: lawngreen;
+  //   width: 100%;
+  // }
+  // .faqs {
+  //   position: relative;
+  //   top: 50px;
+  //   background-color: lawngreen;
+
+  //   .faq-question {
+  //     font-size: 0.2rem;
+  //   }
+
+  //   .faq-answer {
+  //     font-size: 0.2rem;
+  //   }
+  //   .faq {
+  //     width: 50% !important;
+  //     padding: 2px;
+  //     font-size: 12rem !important;
+  //     height: 20rem !important;
+  //   }
+  //   .line-2 {
+  //     width: 50% !important;
+  //   }
+  //   .faq-2,
+  //   .faq-3 {
+  //     width: 50% !important;
+  //     font-size: 12rem !important;
+  //     height: 20rem !important;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //   }
+  // }
+
+  // .team-section {
+  //   // background-color: aqua;
+  //   justify-content: space-between;
+  //   transform: scale(0.7);
+  //   width: 100%;
+  //   background-color: rgba(0, 0, 0, 0.726);
+  //   border-radius: 70px;
+
+  //   .team-left {
+  //     // background-color: aquamarine;
+  //     // margin-left: 60px;
+  //   }
+
+  //   .team-right {
+  //     // background-color: blueviolet;
+  //     margin-left: 50px;
+  //   }
+  // }
 }
 
 // @media screen and (min-width: 1680px) {
