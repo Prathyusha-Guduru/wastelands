@@ -46,6 +46,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
+    <div id="loader" class="loader"></div>
     <main>
       <!-- LANDING PAGE -->
       <div class="landing-page">
@@ -228,5 +229,11 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"
     ></script>
     <script src="script.js"></script>
+    <script>
+      var loader = document.getElementById("loader");
+      window.addEventListener("load", () => {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
