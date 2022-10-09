@@ -55,7 +55,7 @@ mars.addEventListener("mouseout", () => {
 });
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
-  document.querySelector(".team-section").style.display = "flex";
+  // document.querySelector(".team-section").style.display = "flex";
 });
 
 document.querySelector(".faq-3").addEventListener("mouseout", () => {
@@ -95,7 +95,7 @@ function magnify(imgID, zoom) {
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
-  glass.innerHTML = `<img class='magnifying-glass-img' src="images/search.png" alt="" />`;
+  glass.innerHTML = `<img class='magnifying-glass-img' src="images/mag.png" alt="" />`;
 
   /*insert magnifier glass:*/
   img.parentElement.insertBefore(glass, img);
@@ -182,7 +182,7 @@ function magnify(imgID, zoom) {
   }
 }
 
-magnify("map-img", 10);
+magnify("map-img", 20);
 
 // MOBILE LANDSCAPE CHECK
 
@@ -224,4 +224,12 @@ mapImg.addEventListener("mouseout", () => {
   // magnifyingDiv.classList.toggle("displayNone");
   c = c + 1;
   console.log(c);
+});
+
+// preloader
+window.addEventListener("load", () => {
+  var loader = document.getElementById("loader");
+  setTimeout(() => {
+    loader.style.top = "100%";
+  }, 000);
 });

@@ -148,9 +148,9 @@ main {
     opacity: 0%;
     position: absolute;
     z-index: 2;
-    width: 170px;
+    width: 200px;
     left: 35%;
-    top: 33%;
+    top: 30%;
     transition-duration: 0.25s;
     // transition-property: visible;
   }
@@ -194,7 +194,8 @@ main {
       color: #905353;
       padding: 5px 10px;
       font-weight: 800;
-      font-size: 20px;
+      font-size: 1.2rem;
+
       .faq-answer {
         text-align: center;
         height: 100%;
@@ -220,7 +221,7 @@ main {
         color: #905353;
         padding: 5px 10px;
         font-weight: 800;
-        font-size: 20px;
+        font-size: 1.2rem;
         transition-duration: 0.1s;
       }
 
@@ -275,39 +276,60 @@ main {
 }
 
 .team-section {
-  // overflow-y: hidden;
-  // background-color: brown;
   position: absolute;
   bottom: 50px;
   width: 100%;
-  padding: 0 85px;
-  display: none;
   justify-content: space-between;
-  // align-items: flex-end;
-  max-height: 40px;
+  display: flex;
 
-  // .team-member {
-  //   // background-color: lightgreen;
-  //   // margin: 0 10px;
-  // }
-  .team-avatar {
-    // width: 130px;
-    transform: scale(0.75);
-    position: relative;
-    z-index: 2;
-    // background-color: aqua;
+  .team-member {
+    width: 33.3%;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
-    padding-bottom: 5px;
-    // height: 130px;
+    background-color: #ff9800;
   }
+
   .team-left {
     display: flex;
     visibility: visible;
-    position: relative;
-    top: 40px;
-    // background-color: rgb(255, 184, 97);
-    // padding-left: 50px;
+    width: 37%;
+
+    .team-member:nth-child(1) {
+      .team-avatar {
+        width: 80%;
+      }
+    }
+
+    .team-member:nth-child(2) {
+      .team-avatar {
+        width: 70%;
+      }
+    }
+
+    .team-member:nth-child(3) {
+      .team-avatar {
+        width: 85%;
+      }
+    }
+  }
+
+  .team-right {
+    display: flex;
+    visibility: visible;
+    width: 37%;
+
+    .team-member:nth-child(1) {
+      .team-avatar {
+        width: 90%;
+      }
+    }
+
+    .team-member:nth-child(2) {
+      .team-avatar {
+        width: 90%;
+      }
+    }
   }
 
   .team-member-left:nth-child(1) {
@@ -319,7 +341,7 @@ main {
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
     position: relative;
-    top: 10px;
+    // top: 10px;
   }
 
   .team-member-left:nth-child(2) {
@@ -350,7 +372,8 @@ main {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-    transform: scale(0.5);
+    // transform: scale(0.5);
+    // margin-right: 1.5rem;
   }
 
   .team-member-right:nth-child(2) {
@@ -361,38 +384,17 @@ main {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-    transform: scale(0.47);
+    // transform: scale(0.47);
     // background-color: #905353;
     position: relative;
-    right: 30%;
-    top: 10px;
+    // right: 30%;
+    // top: 10px;
   }
 
   .team-right {
-    // background-color: cadetblue;
-    position: relative;
-    left: 15%;
-    top: 50px;
     display: flex;
-    // position: relative;
-    // right: 8%;
-    // padding-left: 30%;
-    padding-left: 0px;
-    // flex-direction: column;
-    // align-items: flex-end;
-    // background-color: aqua;
-  }
-  .team-member {
-    // background-color: lightcoral;
-    // margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    color: #ffffff;
-    .name {
-      font-size: 12px;
-    }
+    justify-content: start;
+    width: 37%;
   }
 }
 
@@ -418,7 +420,6 @@ main {
     position: absolute;
     top: 1px;
     right: 3px;
-    // background-color: lawngreen;
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -527,21 +528,22 @@ main {
 // Magnifying glass
 .img-magnifier-glass {
   position: absolute;
+  // top: 10px;
   transform: translate(-150px, -150px);
   // opacity: 60%;
 
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   background-size: 600%;
 
   .magnifying-glass-img {
-    height: 260px;
-    width: 260px;
+    height: 460px;
+    width: 360px;
     position: relative;
-    transform: translate(-5px, -5px);
+    transform: translate(-15px, -15px);
   }
 }
 
@@ -616,6 +618,8 @@ main {
 
   .newspaper {
     width: 200px !important;
+    // position: relative;
+    top: 45px !important;
   }
 
   .mars {
@@ -651,7 +655,7 @@ main {
     // transform: scale(1.02) !important;
     justify-content: center;
     // align-items: top;
-    transform: scale(0.7);
+    // transform: scale(0.7);
     width: 100%;
     background-color: rgba(0, 0, 0, 0.823);
     border-radius: 70px;
@@ -785,5 +789,8 @@ main {
   height: 100vh;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
+  transition-duration: 2000ms;
 }
