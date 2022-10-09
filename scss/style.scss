@@ -161,7 +161,7 @@ main {
   .footer {
     // background-color: lawngreen;
     position: absolute;
-    bottom: 30px;
+    bottom: 100px;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -277,7 +277,7 @@ main {
 
 .team-section {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -297,19 +297,22 @@ main {
 
     .team-member:nth-child(1) {
       .team-avatar {
-        width: 70%;
+        width: 60%;
+        // opacity: 0;
       }
     }
 
     .team-member:nth-child(2) {
       .team-avatar {
-        width: 60%;
+        width: 50%;
+        // opacity: 0;
       }
     }
 
     .team-member:nth-child(3) {
       .team-avatar {
-        width: 75%;
+        width: 65%;
+        // opacity: 0;
       }
     }
   }
@@ -321,13 +324,15 @@ main {
 
     .team-member:nth-child(1) {
       .team-avatar {
-        width: 80%;
+        width: 70%;
+        // opacity: 0;
       }
     }
 
     .team-member:nth-child(2) {
       .team-avatar {
-        width: 80%;
+        width: 70%;
+        // opacity: 0;
       }
     }
   }
@@ -626,6 +631,10 @@ main {
     width: 100px !important;
   }
 
+  .footer {
+    bottom: 30px !important;
+  }
+
   .faqs {
     // width: 30%;
 
@@ -651,12 +660,13 @@ main {
     // background-color: aqua;
     position: absolute;
     bottom: 120px;
-    padding: 70px;
+    padding: 30px;
+    transform: translate(5%, 10%);
     // transform: scale(1.02) !important;
     justify-content: center;
     // align-items: top;
     // transform: scale(0.7);
-    width: 100%;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.823);
     border-radius: 70px;
 

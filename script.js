@@ -1,7 +1,3 @@
-$(function () {
-  $(".map").maphilight();
-});
-
 body = document.querySelector("body");
 firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
@@ -13,6 +9,32 @@ newspaper = document.querySelector(".newspaper");
 mars = document.querySelector(".mars");
 audio = document.querySelector(".radio");
 bgOverlay = document.querySelector(".overlay");
+
+faqs = document.querySelector(".faqs");
+console.log(faqs);
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".sticky-bag", {
+  scrollTrigger: {
+    trigger: faqs,
+    toggleActions: "play none reverse reset",
+    // markers: true,
+    // start: "top center",
+  },
+  y: -100,
+  // rotation: 360,
+  duration: 1,
+});
+
+const teamMembers = document.querySelectorAll(".team-member");
+console.log(teamMembers);
+
+$(".team-member").each(function (index, teamMember) {
+  const hover = new TimelineLite({ paused: true });
+  hover.to(teamMember, { opacity: 1, stagger: 0.2 });
+  teamMember.animation = hover;
+});
 
 body.addEventListener("scroll", (e) => {
   console.log("vwb");
@@ -55,12 +77,24 @@ mars.addEventListener("mouseout", () => {
 });
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
-  // document.querySelector(".team-section").style.display = "flex";
+  document.querySelector(".team-section").style.display = "flex";
 });
 
 document.querySelector(".faq-3").addEventListener("mouseout", () => {
   document.querySelector(".team-section").style.display = "none";
 });
+
+// $(".faq-3").mouseenter(function () {
+//   teamMembers.forEach((member) => {
+//     member.animation.play();
+//   });
+// });
+
+// $(".faq-3").mouseleave(function () {
+//   teamMembers.forEach((member) => {
+//     member.animation.reverse();
+//   });
+// });
 
 // MAP POPUP WITH BAG
 
