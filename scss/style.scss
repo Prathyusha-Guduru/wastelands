@@ -194,7 +194,7 @@ main {
       color: #905353;
       padding: 5px 10px;
       font-weight: 800;
-      // font-size: 1.2rem;
+      font-size: 1.2rem;
 
       .faq-answer {
         text-align: center;
@@ -221,7 +221,7 @@ main {
         color: #905353;
         padding: 5px 10px;
         font-weight: 800;
-        // font-size: 1.2rem;
+        font-size: 1.2rem;
         transition-duration: 0.1s;
       }
 
@@ -483,10 +483,18 @@ main {
   width: 75vw !important;
   transform: translateX(10%);
   transition-duration: 500ms;
-  animation-name: avatar;
+  animation: avatar 1s;
 }
 
 // RESONSIVE
+
+@media screen and (max-device-width: 1100px) and (min-device-width: 660px) {
+  .faq {
+    font-size: 1rem !important;
+    background-color: lawngreen;
+  }
+}
+
 @media screen and(max-width : 600px) {
   .sticky-bag {
     position: absolute;
@@ -536,7 +544,7 @@ main {
   }
 
   .faq-question {
-    background-color: lawngreen;
+    // background-color: lawngreen;
   }
 }
 
