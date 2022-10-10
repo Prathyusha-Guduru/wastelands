@@ -279,6 +279,7 @@ main {
   position: absolute;
   bottom: 100px;
   width: 100%;
+  background-color: lawngreen;
   justify-content: space-between;
   display: flex;
 
@@ -476,6 +477,15 @@ main {
   // background-color: lawngreen;
 }
 
+.team-section-img {
+  position: absolute;
+  bottom: 100px;
+  width: 75vw !important;
+  transform: translateX(10%);
+  transition-duration: 500ms;
+  animation-name: avatar;
+}
+
 // RESONSIVE
 @media screen and(max-width : 600px) {
   .sticky-bag {
@@ -656,36 +666,42 @@ main {
     font-size: 10px;
   }
 
-  .team-section {
-    // background-color: aqua;
+  .team-section-img {
     position: absolute;
-    bottom: 120px;
-    padding: 30px;
-    transform: translate(5%, 10%);
-    // transform: scale(1.02) !important;
-    justify-content: center;
-    // align-items: top;
-    // transform: scale(0.7);
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.823);
-    border-radius: 70px;
-
-    .team-left {
-      // background-color: aquamarine;
-      // margin-left: 60px;
-      // position: absolute;
-      // inset: 0;
-      margin: 0px !important;
-    }
-
-    .team-right {
-      // background-color: blueviolet;
-      // margin-left: 50px;
-      // position: absolute;
-      // inset: 0;
-      margin: 0px !important;
-    }
+    bottom: 50px;
+    transform: translateX(12%);
   }
+
+  // .team-section {
+  //   // background-color: aqua;
+  //   position: absolute;
+  //   bottom: 120px;
+  //   padding: 30px;
+  //   transform: translate(5%, 10%);
+  //   // transform: scale(1.02) !important;
+  //   justify-content: center;
+  //   // align-items: top;
+  //   // transform: scale(0.7);
+  //   width: 90%;
+  //   background-color: rgba(0, 0, 0, 0.823);
+  //   border-radius: 70px;
+
+  //   .team-left {
+  //     // background-color: aquamarine;
+  //     // margin-left: 60px;
+  //     // position: absolute;
+  //     // inset: 0;
+  //     margin: 0px !important;
+  //   }
+
+  //   .team-right {
+  //     // background-color: blueviolet;
+  //     // margin-left: 50px;
+  //     // position: absolute;
+  //     // inset: 0;
+  //     margin: 0px !important;
+  //   }
+  // }
 
   // .map {
   //   width: 70px !important;

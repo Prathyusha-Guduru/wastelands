@@ -77,11 +77,11 @@ mars.addEventListener("mouseout", () => {
 });
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
-  document.querySelector(".team-section").style.display = "flex";
+  document.querySelector(".team-section-img").style.display = "flex";
 });
 
 document.querySelector(".faq-3").addEventListener("mouseout", () => {
-  document.querySelector(".team-section").style.display = "none";
+  document.querySelector(".team-section-img").style.display = "none";
 });
 
 // $(".faq-3").mouseenter(function () {
