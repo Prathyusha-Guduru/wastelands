@@ -552,7 +552,10 @@ main {
 .img-magnifier-glass {
   position: absolute;
   // top: 10px;
-  transform: translate(-200px, -200px);
+  transform: translate(-280px, -280px);
+  // transform: translateX(-200px);
+  // transform: translateY(-200px);
+
   // opacity: 60%;
 
   border: 3px solid #000;
@@ -560,7 +563,7 @@ main {
   cursor: none;
   width: 280px;
   height: 280px;
-  background-size: 450%;
+  background-size: 550%;
 
   .magnifying-glass-img {
     height: 460px;
