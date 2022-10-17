@@ -17,6 +17,7 @@
 body {
   overflow-x: hidden;
   font-family: "aloja";
+  cursor: url("../mouse-cursor-30.png"), default;
 }
 
 main {
@@ -53,9 +54,11 @@ main {
     align-items: center;
     margin-right: 50px;
     // background-color: lightcoral;
+    cursor: url(../images/mouse-cursor.cur), url(../images/mouse-cursor.png),
+      default;
 
     a {
-      cursor: pointer;
+      cursor: url("../mouse-pointer-30.png"), default;
       margin: 0 20px;
       border: 2.5px solid #ffffff;
       border-radius: 18px;
@@ -119,7 +122,7 @@ main {
   z-index: 5;
   // right: -30px;
   left: 86%;
-  cursor: pointer;
+  cursor: url("../mouse-pointer-30.png"), default;
 }
 
 .comic-strip {
@@ -131,7 +134,7 @@ main {
   }
 
   #first-point {
-    cursor: pointer;
+    cursor: url("../mouse-pointer-30.png"), default;
   }
   .newspaper {
     opacity: 0%;
@@ -226,7 +229,7 @@ main {
       }
 
       .faq-2:hover {
-        cursor: pointer;
+        cursor: url("../mouse-pointer-30.png"), default;
         span {
           text-decoration: line-through;
         }
@@ -243,11 +246,11 @@ main {
     // HOVER EFFECTS
 
     .faq-3:hover {
-      cursor: pointer;
+      cursor: url("../mouse-pointer-30.png"), default;
     }
     .faq-1:hover,
     .faq-4:hover {
-      cursor: pointer;
+      cursor: url("../mouse-pointer-30.png"), default;
       height: 100px;
       justify-content: flex-start;
       .go-away-faq {
@@ -260,7 +263,7 @@ main {
       }
     }
     .faq-4:hover {
-      cursor: pointer;
+      cursor: url("../mouse-pointer-30.png"), default;
       height: 100px;
     }
   }
@@ -428,7 +431,7 @@ main {
     right: 3px;
     width: 80px;
     height: 80px;
-    cursor: pointer;
+    cursor: url("../mouse-pointer-30.png"), default;
     // background-color: rgba(144, 238, 144, 0.6);
   }
 }
@@ -451,7 +454,7 @@ main {
   z-index: 2;
   width: 100px;
   // background-color: rgb(255, 19, 19);
-  cursor: pointer;
+  cursor: url("../mouse-pointer-30.png"), default;
   // visibility: hidden;
 }
 

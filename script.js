@@ -159,21 +159,21 @@ function magnify(imgID, zoom) {
     pos = getCursorPos(e);
     x = pos.x;
     y = pos.y;
+    // console.log(zoom);
+    console.log(x, y);
 
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - w / zoom) {
-      // magnifyingDiv.classList.toggle("displayNone");
-      // console.log("horizontal ");
-      x = img.width - w / zoom;
+      x = img.width + 600;
     }
     if (x < w / zoom) {
-      x = w / zoom;
+      x = w / zoom - 490;
     }
     if (y > img.height - h / zoom) {
-      y = img.height - h / zoom;
+      y = img.height + 490;
     }
     if (y < h / zoom) {
-      y = h / zoom;
+      y = h / zoom - 490;
     }
 
     /*set the position of the magnifier glass:*/
