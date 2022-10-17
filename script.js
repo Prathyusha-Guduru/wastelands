@@ -180,9 +180,15 @@ function magnify(imgID, zoom) {
     glass.style.left = x - w + "px";
     glass.style.top = y - h + "px";
 
-    let xMapped = mapRange(x, 60, img.getBoundingClientRect().width, 0, 899);
+    let xMapped = mapRange(x, 150, img.getBoundingClientRect().width, 0, 1200);
 
-    let yMapped = mapRange(y, 55, img.getBoundingClientRect().height, 0, 481);
+    let yMapped = mapRange(
+      y,
+      120,
+      img.getBoundingClientRect().height,
+      0,
+      642.04
+    );
 
     /*display what the magnifier glass "sees":*/
     // let finalZoom = "-" + x * zoom + "px -" + y * zoom + "px";
