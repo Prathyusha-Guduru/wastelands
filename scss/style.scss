@@ -625,13 +625,20 @@ main {
 }
 
 @media screen and (orientation: landscape) and (max-device-height: 576px) {
+  .landing-page nav a {
+    transform: scale(0.8);
+    // margin-right: 20px;
+    margin: 0 5px;
+    padding: 3px 10px;
+  }
   .landing-page .hero-text {
     h3 {
       font-size: 0.8rem;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
+      margin: 10px 0 10px 0;
     }
   }
 
