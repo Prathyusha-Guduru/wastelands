@@ -70,7 +70,9 @@
       transition-duration: 500ms;
     }
     img:hover {
-      cursor: pointer;
+      // cursor: pointer;
+
+      cursor: url("../mouse-pointer-60.png"), pointer;
       transform: scale(1.1);
     }
     .ch-lock:hover {
