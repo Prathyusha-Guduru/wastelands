@@ -58,7 +58,7 @@ main {
     a {
       cursor: url("../mouse-pointer-60.png"), pointer;
       margin: 0 20px;
-      border: 2.5px solid #ffffff;
+      border: 3.5px solid #ffffff;
       border-radius: 18px;
       padding: 5px 8px;
       // background-color: lawngreen;
@@ -104,11 +104,11 @@ main {
       align-items: flex-start;
       width: 100%;
       right: 40px;
-      top: 27px;
+      top: 50px;
     }
     h3:nth-of-type(2) {
       left: 30px;
-      bottom: 15px;
+      bottom: 45px;
     }
   }
 }
@@ -139,9 +139,10 @@ main {
     transition-duration: 0.25s;
     position: absolute;
     z-index: 2;
-    width: 430px;
-    top: 100px;
-    right: 20px;
+    // width: 430px;
+    width: 30%;
+    top: 4%;
+    right: 0.5%;
   }
 
   .mars {
@@ -151,7 +152,7 @@ main {
     z-index: 2;
     width: 200px;
     left: 35%;
-    top: 30%;
+    top: 31%;
     transition-duration: 0.25s;
     // transition-property: visible;
   }
