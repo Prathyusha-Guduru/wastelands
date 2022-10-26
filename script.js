@@ -110,6 +110,7 @@ document.querySelector(".roadmap").addEventListener("click", () => {
 
 document.querySelector(".map-close-box").addEventListener("click", () => {
   mapPopup.style.display = "none";
+  bgOverlay.classList.add("displayNone");
 });
 
 bgOverlay.addEventListener("click", () => {
@@ -169,7 +170,7 @@ function magnify(imgID, zoom) {
 
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - w / zoom) {
-      x = img.width + 600;
+      x = img.width + 700;
     }
     if (x < w / zoom) {
       x = w / zoom - 490;
@@ -178,7 +179,7 @@ function magnify(imgID, zoom) {
       y = img.height + 490;
     }
     if (y < h / zoom) {
-      y = h / zoom - 490;
+      y = h / zoom - 700;
     }
 
     /*set the position of the magnifier glass:*/
