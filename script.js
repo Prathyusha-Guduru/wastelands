@@ -257,7 +257,7 @@ if (mobileCheck() && screen.height > screen.width) {
     document
       .querySelector(".mobile-orientation-modal")
       .classList.remove("mobile-active");
-  }, 4000);
+  }, 8000);
 }
 
 // console.log("small screen", screen.orientation);
