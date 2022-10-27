@@ -170,7 +170,7 @@ function magnify(imgID, zoom) {
 
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - w / zoom) {
-      x = img.width + 700;
+      x = img.width + 800;
     }
     if (x < w / zoom) {
       x = w / zoom - 490;
