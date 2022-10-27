@@ -103,10 +103,10 @@ bag.addEventListener("click", () => {
   bgOverlay.classList.remove("displayNone");
 });
 
-document.querySelector(".roadmap").addEventListener("click", () => {
-  mapPopup.style.display = "unset";
-  bgOverlay.classList.remove("displayNone");
-});
+// document.querySelector(".roadmap").addEventListener("click", () => {
+//   mapPopup.style.display = "unset";
+//   bgOverlay.classList.remove("displayNone");
+// });
 
 document.querySelector(".map-close-box").addEventListener("click", () => {
   mapPopup.style.display = "none";
