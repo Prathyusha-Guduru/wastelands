@@ -12,7 +12,7 @@
       rel="preconnect"
       rel="preload"
       as="style"
-      onload="this.rel = 'stylesheet'"
+      ="this.rel = 'stylesheet'"
       href="https://fonts.googleapis.com"
     />
     <link
@@ -45,7 +45,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
-  <body>
+  <body onload="onLoad()">
     <div id="loader" class="loader"></div>
     <main>
       <!-- LANDING PAGE -->
@@ -213,5 +213,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      let preloader = document.getElementById("loader");
+      function displayNone() {
+        preloader.style.display = "none";
+      }
+      function onLoad() {
+        setTimeout(() => {
+          displayNone();
+        }, 4000);
+      }
+    </script>
   </body>
 </html>
