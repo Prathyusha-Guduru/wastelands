@@ -78,6 +78,10 @@ main {
     }
   }
 
+  .hero-text-img {
+    display: none;
+  }
+
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -516,20 +520,26 @@ main {
       margin-right: 0;
     }
     .hero-text {
-      h1 {
-        // margin: 10px 0;
-        inset: 0;
-        font-size: 3rem;
-      }
-      h3 {
-        // background-color: #905353;
-        font-size: 1rem;
-        inset: 0 !important;
-        width: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-      }
+      // h1 {
+      //   // margin: 10px 0;
+      //   inset: 0;
+      //   font-size: 3rem;
+      // }
+      // h3 {
+      //   // background-color: #905353;
+      //   font-size: 1rem;
+      //   inset: 0 !important;
+      //   width: 100%;
+      //   align-items: center;
+      //   display: flex;
+      //   justify-content: center;
+      // }
+      display: none;
+    }
+
+    .hero-text-img {
+      display: block !important;
+      width: 30rem;
     }
   }
 
@@ -633,15 +643,21 @@ main {
     padding: 3px 10px;
   }
   .landing-page .hero-text {
-    h3 {
-      font-size: 0.8rem;
-    }
+    // h3 {
+    //   font-size: 0.8rem;
+    // }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 700 !important;
-      margin: 10px 0 10px 0;
-    }
+    // h1 {
+    //   font-size: 3rem;
+    //   font-weight: 700 !important;
+    //   margin: 10px 0 10px 0;
+    // }
+    display: none;
+  }
+
+  .hero-text-img {
+    display: block !important;
+    width: 30rem;
   }
 
   .sticky-bag {
@@ -832,12 +848,12 @@ main {
 
 #loader {
   background: #ff9800 url(loader.gif) no-repeat center;
-  background-size: 15%;
+  background-size: 20%;
   height: 100vh;
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  // top: 0;
   // left: 0;
   z-index: 100;
-  transition-duration: 2000ms;
+  // transition-duration: 2000ms;
 }
