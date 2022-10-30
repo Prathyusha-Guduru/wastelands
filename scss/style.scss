@@ -512,6 +512,15 @@ main {
     top: 80%;
   }
 
+  .map-popup {
+    // background-color: lemonchiffon;
+    padding: 0;
+    // width: 60vw;
+    .map-img {
+      // width: 80vw !important;
+    }
+  }
+
   .landing-page {
     nav {
       justify-content: center;
