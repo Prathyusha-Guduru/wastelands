@@ -15,18 +15,6 @@ console.log(faqs);
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".sticky-bag", {
-  scrollTrigger: {
-    trigger: faqs,
-    toggleActions: "play none reverse reset",
-    // markers: true,
-    // start: "top center",
-  },
-  y: -100,
-  // rotation: 360,
-  duration: 1,
-});
-
 const teamMembers = document.querySelectorAll(".team-member");
 console.log(teamMembers);
 
@@ -293,6 +281,18 @@ mapImg.addEventListener("mouseout", () => {
 if (!mobileCheck()) {
   console.log("IT IS A LAPTOP");
   magnify("map-img", 500);
+
+  gsap.to(".sticky-bag", {
+    scrollTrigger: {
+      trigger: faqs,
+      toggleActions: "play none reverse reset",
+      // markers: true,
+      // start: "top center",
+    },
+    y: -100,
+    // rotation: 360,
+    duration: 1,
+  });
 }
 
 //PRELAODER FIX
