@@ -512,6 +512,10 @@ main {
     top: 80%;
   }
 
+  .locked-list {
+    display: none !important;
+  }
+
   .map-popup {
     // background-color: lemonchiffon;
     padding: 0;
@@ -675,6 +679,10 @@ main {
     inset: 0;
     left: 80%;
     top: 80%;
+  }
+
+  .locked-list {
+    display: none !important;
   }
 
   .newspaper {
