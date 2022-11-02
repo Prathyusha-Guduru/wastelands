@@ -511,6 +511,9 @@ main {
     left: 70%;
     top: 80%;
   }
+  main {
+    width: 100vw !important;
+  }
 
   .locked-list {
     display: none !important;
@@ -654,6 +657,10 @@ main {
     // margin-right: 20px;
     margin: 0 5px;
     padding: 3px 10px;
+  }
+
+  main {
+    width: 100vw !important;
   }
   .landing-page .hero-text {
     // h3 {
@@ -868,7 +875,7 @@ main {
   background-size: 20%;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   // top: 0;
   // left: 0;
   z-index: 100;
