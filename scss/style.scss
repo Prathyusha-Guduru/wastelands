@@ -658,8 +658,11 @@ main {
     margin: 0 5px;
     padding: 3px 10px;
   }
-
+  body {
+    background-color: lightcoral;
+  }
   main {
+    background-color: lawngreen;
     width: 100vw !important;
   }
   .landing-page .hero-text {
