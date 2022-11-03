@@ -197,9 +197,7 @@ main {
       border-radius: 13px;
       margin: 10px 0;
       font-family: "Dosis", sans-serif;
-      // color: #905353;
-      color: #ff0000;
-
+      color: #905353;
       padding: 5px 10px;
       font-weight: 800;
       font-size: 1.2rem;
@@ -647,7 +645,7 @@ main {
 @media screen and (max-device-width: 850px) {
   .faq-question {
     // color: rgb(255, 0, 225) !important;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .random-box {
@@ -665,6 +663,19 @@ main {
     inset: 0;
     left: 80%;
     top: 80%;
+  }
+
+  .landing-page .hero-text {
+    // h3 {
+    //   font-size: 0.8rem;
+    // }
+
+    // h1 {
+    //   font-size: 3rem;
+    //   font-weight: 700 !important;
+    //   margin: 10px 0 10px 0;
+    // }
+    display: none;
   }
 }
 
