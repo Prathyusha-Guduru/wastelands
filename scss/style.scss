@@ -646,12 +646,25 @@ main {
 // NEW MEDIA QUERY FOR LANDSCAPE
 @media screen and (max-device-width: 850px) {
   .faq-question {
-    color: rgb(255, 0, 225) !important;
+    // color: rgb(255, 0, 225) !important;
     font-size: 0.75rem;
   }
 
   .random-box {
-    background-color: rgb(255, 80, 80) !important;
+    // background-color: rgb(255, 80, 80) !important;
+  }
+
+  .hero-text-img {
+    display: block !important;
+    width: 30rem;
+  }
+
+  .sticky-bag {
+    position: absolute;
+    width: 70px;
+    inset: 0;
+    left: 80%;
+    top: 80%;
   }
 }
 
@@ -692,18 +705,18 @@ main {
     display: none;
   }
 
-  .hero-text-img {
-    display: block !important;
-    width: 30rem;
-  }
+  // .hero-text-img {
+  //   display: block !important;
+  //   width: 30rem;
+  // }
 
-  .sticky-bag {
-    position: absolute;
-    width: 70px;
-    inset: 0;
-    left: 80%;
-    top: 80%;
-  }
+  // .sticky-bag {
+  //   position: absolute;
+  //   width: 70px;
+  //   inset: 0;
+  //   left: 80%;
+  //   top: 80%;
+  // }
 
   .locked-list {
     display: none !important;
@@ -896,12 +909,12 @@ main {
   // transition-duration: 2000ms;
 }
 
-.random-box {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: lawngreen;
-  width: 100px;
-  height: 100px;
-}
+// .random-box {
+//   position: fixed;
+//   z-index: 10;
+//   top: 0;
+//   left: 0;
+//   background-color: lawngreen;
+//   width: 100px;
+//   height: 100px;
+// }
