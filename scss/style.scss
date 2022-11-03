@@ -884,3 +884,13 @@ main {
   z-index: 100;
   // transition-duration: 2000ms;
 }
+
+.random-box {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: lawngreen;
+  width: 200px;
+  height: 200px;
+}
