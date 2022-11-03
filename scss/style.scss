@@ -643,6 +643,18 @@ main {
   // }
 }
 
+// NEW MEDIA QUERY FOR LANDSCAPE
+@media screen and (max-device-width: 850px) {
+  .faq-question {
+    color: rgb(255, 0, 225) !important;
+    font-size: 0.75rem;
+  }
+
+  .random-box {
+    background-color: rgb(255, 80, 80) !important;
+  }
+}
+
 @media screen and (orientation: portrait) and (max-device-width: 576px) {
   .mobile-orientation-modal.mobile-active {
     display: flex;
@@ -664,9 +676,9 @@ main {
     width: 100vw !important;
   }
 
-  .random-box {
-    background-color: cadetblue !important;
-  }
+  // .random-box {
+  //   background-color: cadetblue !important;
+  // }
   .landing-page .hero-text {
     // h3 {
     //   font-size: 0.8rem;
@@ -716,7 +728,7 @@ main {
 
     .faq {
       // background-color: lightblue !important;
-      color: rgb(255, 0, 225);
+      // color: rgb(255, 0, 225);
       width: 28% !important;
       height: auto !important;
     }
@@ -727,11 +739,6 @@ main {
     .faq-answer {
       font-size: 10px;
     }
-  }
-
-  .faq-question {
-    color: rgb(255, 0, 225) !important;
-    font-size: 0.75rem;
   }
 
   .team-section-img {
