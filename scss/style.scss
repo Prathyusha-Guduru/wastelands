@@ -197,7 +197,9 @@ main {
       border-radius: 13px;
       margin: 10px 0;
       font-family: "Dosis", sans-serif;
-      color: #905353;
+      // color: #905353;
+      color: #ff0000;
+
       padding: 5px 10px;
       font-weight: 800;
       font-size: 1.2rem;
@@ -569,10 +571,6 @@ main {
 
   .footer {
     display: none !important;
-  }
-
-  .faq-question {
-    // background-color: lawngreen;
   }
 }
 
