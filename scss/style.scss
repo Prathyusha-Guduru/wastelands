@@ -509,7 +509,7 @@ main {
     inset: 0;
 
     left: 70%;
-    top: 80%;
+    top: 83%;
   }
   main {
     width: 100vw !important;
@@ -662,7 +662,7 @@ main {
     width: 70px;
     inset: 0;
     left: 80%;
-    top: 80%;
+    top: 83%;
   }
 
   .landing-page .hero-text {
@@ -701,7 +701,7 @@ main {
   }
 
   .random-box {
-    background-color: cadetblue !important;
+    // background-color: cadetblue !important;
   }
   .landing-page .hero-text {
     // h3 {
@@ -726,7 +726,7 @@ main {
     width: 70px;
     inset: 0;
     left: 80%;
-    top: 80%;
+    top: 83%;
   }
 
   .locked-list {
@@ -925,12 +925,12 @@ main {
   // transition-duration: 2000ms;
 }
 
-.random-box {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: lawngreen;
-  width: 100px;
-  height: 100px;
-}
+// .random-box {
+//   position: fixed;
+//   z-index: 10;
+//   top: 0;
+//   left: 0;
+//   background-color: lawngreen;
+//   width: 100px;
+//   height: 100px;
+// }
