@@ -665,6 +665,10 @@ main {
     background-color: lawngreen;
     width: 100vw !important;
   }
+
+  .random-box {
+    background-color: cadetblue;
+  }
   .landing-page .hero-text {
     // h3 {
     //   font-size: 0.8rem;
@@ -714,6 +718,7 @@ main {
 
     .faq {
       // background-color: lightblue !important;
+      color: rgb(255, 0, 225);
       width: 28% !important;
       height: auto !important;
     }
@@ -727,6 +732,7 @@ main {
   }
 
   .faq-question {
+    color: rgb(255, 0, 225) !important;
     font-size: 0.75rem;
   }
 
@@ -891,6 +897,6 @@ main {
   top: 0;
   left: 0;
   background-color: lawngreen;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
