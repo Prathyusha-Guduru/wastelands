@@ -716,18 +716,18 @@ main {
     display: none;
   }
 
-  // .hero-text-img {
-  //   display: block !important;
-  //   width: 30rem;
-  // }
+  .hero-text-img {
+    display: block !important;
+    width: 30rem;
+  }
 
-  // .sticky-bag {
-  //   position: absolute;
-  //   width: 70px;
-  //   inset: 0;
-  //   left: 80%;
-  //   top: 80%;
-  // }
+  .sticky-bag {
+    position: absolute;
+    width: 70px;
+    inset: 0;
+    left: 80%;
+    top: 80%;
+  }
 
   .locked-list {
     display: none !important;
@@ -749,6 +749,11 @@ main {
 
   .faqs {
     // width: 30%;
+
+    .faq-question {
+      // color: rgb(255, 0, 225) !important;
+      font-size: 0.7rem;
+    }
 
     .faq {
       // background-color: lightblue !important;
