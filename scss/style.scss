@@ -643,6 +643,12 @@ main {
 
 // NEW MEDIA QUERY FOR LANDSCAPE
 @media screen and (max-device-width: 850px) {
+  .landing-page nav a {
+    transform: scale(0.8);
+    // margin-right: 20px;
+    margin: 0 5px;
+    padding: 3px 10px;
+  }
   .faq-question {
     // color: rgb(255, 0, 225) !important;
     font-size: 0.65rem;
