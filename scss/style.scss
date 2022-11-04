@@ -649,7 +649,7 @@ main {
   }
 
   .random-box {
-    // background-color: rgb(255, 80, 80) !important;
+    background-color: rgb(255, 80, 80) !important;
   }
 
   .hero-text-img {
@@ -925,12 +925,12 @@ main {
   // transition-duration: 2000ms;
 }
 
-// .random-box {
-//   position: fixed;
-//   z-index: 10;
-//   top: 0;
-//   left: 0;
-//   background-color: lawngreen;
-//   width: 100px;
-//   height: 100px;
-// }
+.random-box {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: lawngreen;
+  width: 100px;
+  height: 100px;
+}
