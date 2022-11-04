@@ -678,6 +678,12 @@ main {
     display: none;
   }
 
+  .team-section-img {
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(12%);
+  }
+
   .faqs {
     // width: 30%;
 
