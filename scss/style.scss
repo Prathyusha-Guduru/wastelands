@@ -12,11 +12,13 @@
   src: url("../fonts/Aloja-Light.otf");
   src: local("Aloja-Light"), local("Aloja-Light"),
     url("../fonts/Aloja-Light.otf") format("opentype");
+  font-display: swap;
 }
 
 body {
   overflow-x: hidden;
   font-family: "aloja";
+  font-display: swap;
   cursor: url("../mouse-cursor-60.png"), default;
 }
 
