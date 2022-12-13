@@ -77,6 +77,14 @@ main {
       letter-spacing: 3px;
       display: flex;
       justify-content: center;
+      cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
+        auto;
+      transition-duration: 0.3s;
+    }
+
+    .mint-btn:hover {
+      color: rgba(255, 255, 255, 0.7);
+      border: 3.5px solid rgba(255, 255, 255, 0.7);
     }
   }
 
