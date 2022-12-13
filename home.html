@@ -63,6 +63,10 @@
   <body onload="onLoad()">
     <div id="loader" class="loader"></div>
     <main>
+      <audio autoplay loop id="guitar-track">
+        <source src="guitar.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <div class="random-box"></div>
       <!-- LANDING PAGE -->
       <div class="landing-page">
@@ -210,6 +214,11 @@
         <a class="invisible" id="second-point"></a>
         <a class="invisible" id="third-point"></a>
       </div>
+      <div class="sticky-control">
+        <img src="images/pause 2.png" alt="" class="pause" />
+        <img src="images/play 2.png" alt="" class="play" />
+      </div>
+
       <img src="images/bag.png" class="sticky-bag" alt="" />
       <div class="map-popup">
         <div class="map-close-box"></div>

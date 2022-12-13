@@ -11,7 +11,9 @@ audio = document.querySelector(".radio");
 bgOverlay = document.querySelector(".overlay");
 
 faqs = document.querySelector(".faqs");
-console.log(faqs);
+
+controlBtn = document.querySelector(".sticky-control");
+const track = document.getElementById("guitar-track");
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -295,7 +297,18 @@ if (!mobileCheck()) {
   });
 }
 
-//PRELAODER FIX
-// REMOVE MAP IN MOBILE
-// POSITION OF THE BAG IN MOBILE  (covering canyon board)
-// RADIO IN IPAD
+// MUSIC PLAYER
+
+document.querySelector(".pause").addEventListener("click", () => {
+  console.log("PAUSE BUTTON PRESSED");
+  track.pause();
+  document.querySelector(".pause").style.visibility = "hidden";
+  document.querySelector(".play").style.visibility = "visible";
+});
+
+document.querySelector(".play").addEventListener("click", () => {
+  console.log("PLAY BUTTON PRESSED");
+  track.play();
+  document.querySelector(".play").style.visibility = "hidden";
+  document.querySelector(".pause").style.visibility = "visible";
+});

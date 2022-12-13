@@ -69,6 +69,11 @@ main {
         width: 30px;
       }
     }
+
+    a:hover {
+      color: rgba(255, 255, 255, 0.7);
+      border: 3.5px solid rgba(255, 255, 255, 0.7);
+    }
     .mint-btn {
       text-decoration: none;
       color: #ffffff;
@@ -77,14 +82,13 @@ main {
       letter-spacing: 3px;
       display: flex;
       justify-content: center;
-      cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
-        auto;
+      // cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
+      //   auto;
       transition-duration: 0.3s;
     }
 
     .mint-btn:hover {
-      color: rgba(255, 255, 255, 0.7);
-      border: 3.5px solid rgba(255, 255, 255, 0.7);
+      text-decoration: line-through;
     }
   }
 
@@ -124,6 +128,43 @@ main {
       left: 30px;
       bottom: 15%;
     }
+  }
+}
+
+// ROTATION
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+// STICKY ITEMS
+
+.sticky-control {
+  width: 170px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 5;
+  // right: -30px;
+  left: 1%;
+  cursor: url("../mouse-pointer-60.png"), pointer;
+
+  img {
+    width: 170px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 5;
+  }
+
+  .pause {
+    animation: rotation 8s infinite linear;
+  }
+
+  .play {
+    visibility: hidden;
   }
 }
 
