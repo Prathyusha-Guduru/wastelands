@@ -299,6 +299,17 @@ if (!mobileCheck()) {
 
 // MUSIC PLAYER
 
+function isPlaying(audelem) {
+  return !audelem.paused;
+}
+
+console.log(`is playinggggggggg   ${isPlaying(track)}`);
+
+if (isPlaying(track) === false) {
+  document.querySelector(".pause").style.visibility = "hidden";
+  document.querySelector(".play").style.visibility = "visible";
+}
+
 document.querySelector(".pause").addEventListener("click", () => {
   console.log("PAUSE BUTTON PRESSED");
   track.pause();
