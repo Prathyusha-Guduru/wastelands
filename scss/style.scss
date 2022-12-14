@@ -555,6 +555,17 @@ main {
 }
 
 @media screen and(max-width : 600px) {
+  .sticky-control {
+    position: absolute;
+    width: 100px;
+    inset: 0;
+    left: 1%;
+    top: 83%;
+    img {
+      width: 100px;
+    }
+  }
+
   .sticky-bag {
     position: absolute;
     width: 100px;
@@ -714,6 +725,17 @@ main {
   .hero-text-img {
     display: block !important;
     width: 30rem;
+  }
+
+  .sticky-control {
+    position: absolute;
+    width: 100px;
+    inset: 0;
+    left: 1%;
+    top: 83%;
+    img {
+      width: 100px;
+    }
   }
 
   .sticky-bag {
