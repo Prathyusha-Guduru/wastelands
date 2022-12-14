@@ -295,6 +295,18 @@ if (!mobileCheck()) {
     // rotation: 360,
     duration: 1,
   });
+
+  gsap.to(".sticky-control", {
+    scrollTrigger: {
+      trigger: faqs,
+      toggleActions: "play none reverse reset",
+      // markers: true,
+      // start: "top center",
+    },
+    y: -70,
+    // rotation: 360,
+    duration: 1,
+  });
 }
 
 // MUSIC PLAYER
@@ -322,4 +334,11 @@ document.querySelector(".play").addEventListener("click", () => {
   track.play();
   document.querySelector(".play").style.visibility = "hidden";
   document.querySelector(".pause").style.visibility = "visible";
+});
+
+window.onload(() => {
+  console.log("page loaded");
+  if (isPlaying(track) === false) {
+    track.play();
+  }
 });
