@@ -555,7 +555,11 @@ main {
 }
 
 @media screen and(max-width : 600px) {
+  .guitar-track {
+    display: none !important;
+  }
   .sticky-control {
+    display: none;
     position: absolute;
     width: 100px;
     inset: 0;
@@ -707,6 +711,10 @@ main {
 
 // NEW MEDIA QUERY FOR LANDSCAPE
 @media screen and (max-device-width: 850px) {
+  .guitar-track {
+    display: none;
+  }
+
   .landing-page nav a {
     transform: scale(0.8);
     // margin-right: 20px;
@@ -728,6 +736,7 @@ main {
   }
 
   .sticky-control {
+    display: none;
     position: absolute;
     width: 100px;
     inset: 0;
