@@ -336,9 +336,9 @@ document.querySelector(".play").addEventListener("click", () => {
   document.querySelector(".pause").style.visibility = "visible";
 });
 
-window.onload(() => {
-  console.log("page loaded");
-  if (isPlaying(track) === false) {
-    track.play();
-  }
-});
+// window.onload(() => {
+//   console.log("page loaded");
+//   if (isPlaying(track) === false) {
+//     track.play();
+//   }
+// });
