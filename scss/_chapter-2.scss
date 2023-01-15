@@ -1,0 +1,18 @@
+.chapter-2-landing-page {
+  background: url(../chapter-2-background.png) no-repeat center center fixed !important;
+}
+
+.chapter-2-hero-text {
+  h1 {
+    // font-weight: 400;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.1px !important;
+    -webkit-text-stroke-color: #000000 !important;
+  }
+
+  h3 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+}
