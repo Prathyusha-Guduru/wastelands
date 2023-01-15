@@ -41,7 +41,7 @@
               <img
                 src="images/chapter-2.svg"
                 alt="chapter svg"
-                class="ch-lock"
+                class="chapter-2-button"
               />
             </ul>
             <ul class="ch">
@@ -61,5 +61,21 @@
       </div>
       <img class="radio-img" src="images/radio.svg" alt="" />
     </main>
+
+    <script>
+      const chapter2Button = document.querySelector(".chapter-2-button");
+      const fullScreen = document.querySelector(".full-screen");
+      chapter2Button.addEventListener("mouseover", () => {
+        console.log("button hovered");
+        fullScreen.style.background =
+          "url(./chapter-2-overlay.png) no-repeat center center fixed";
+        fullScreen.style.backgroundSize = "cover";
+      });
+      chapter2Button.addEventListener("mouseout", () => {
+        fullScreen.style.background =
+          "url(../images/overlay-bg.png) no-repeat center center fixed";
+        fullScreen.style.backgroundSize = "cover";
+      });
+    </script>
   </body>
 </html>
