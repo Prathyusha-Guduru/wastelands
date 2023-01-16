@@ -1,5 +1,5 @@
 .chapter-2-landing-page {
-  background: url(../chapter-2-background.png) no-repeat center center fixed !important;
+  background: url(../chapter-2-landing.png) no-repeat center center fixed !important;
 }
 
 .chapter-2-hero-text {
@@ -15,4 +15,8 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
   }
+}
+
+.faq-chapter-2 {
+  border: 2px solid #7e5959;
 }
