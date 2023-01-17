@@ -1,8 +1,6 @@
 body = document.querySelector("body");
 firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
-chapter2FirstPoint = document.getElementById("chapter-2-first-point");
-chapter2SecondPoint = document.getElementById("chapter-2-second-point");
 secondPoint = document.getElementById("second-point");
 bag = document.querySelector(".sticky-bag");
 mapPopup = document.querySelector(".map-popup");
@@ -10,8 +8,6 @@ mapPopup = document.querySelector(".map-popup");
 newspaper = document.querySelector(".newspaper");
 mars = document.querySelector(".mars");
 audio = document.querySelector(".radio");
-rebellion = document.querySelector(".rebellion");
-protest = document.querySelector(".protest");
 bgOverlay = document.querySelector(".overlay");
 
 faqs = document.querySelector(".faqs");
@@ -36,45 +32,39 @@ body.addEventListener("scroll", (e) => {
 });
 
 console.log(firstPoint);
-if (firstPoint != null) {
-  firstPoint.addEventListener("mouseover", () => {
-    newspaper.classList.toggle("show");
-  });
+firstPoint.addEventListener("mouseover", () => {
+  newspaper.classList.toggle("show");
+});
 
-  firstPoint.addEventListener("click", () => {
-    newspaper.classList.toggle("show");
-  });
+firstPoint.addEventListener("click", () => {
+  newspaper.classList.toggle("show");
+});
 
-  newspaper.addEventListener("mouseout", () => {
-    newspaper.classList.remove("show");
-  });
-}
+secondPoint.addEventListener(
+  "mouseover",
+  () => {
+    secondPoint.click();
+    console.log("radio hover");
+    audio.play();
+  },
+  false
+);
 
-if (secondPoint != null) {
-  secondPoint.addEventListener(
-    "mouseover",
-    () => {
-      secondPoint.click();
-      console.log("radio hover");
-      audio.play();
-    },
-    false
-  );
+secondPoint.addEventListener("mouseout", () => {
+  audio.pause();
+});
 
-  secondPoint.addEventListener("mouseout", () => {
-    audio.pause();
-  });
-}
+newspaper.addEventListener("mouseout", () => {
+  newspaper.classList.remove("show");
+});
 
-if (thirdPoint != null) {
-  thirdPoint.addEventListener("mouseover", () => {
-    mars.classList.toggle("show");
-  });
+thirdPoint.addEventListener("mouseover", () => {
+  mars.classList.toggle("show");
+});
 
-  mars.addEventListener("mouseout", () => {
-    mars.classList.remove("show");
-  });
-}
+mars.addEventListener("mouseout", () => {
+  mars.classList.remove("show");
+});
 
 document.querySelector(".faq-3").addEventListener("mouseover", () => {
   document.querySelector(".team-section-img").style.display = "flex";
@@ -352,35 +342,3 @@ document.querySelector(".play").addEventListener("click", () => {
 //     track.play();
 //   }
 // });
-
-// CHAPTER 2
-
-if (chapter2FirstPoint != null) {
-  chapter2FirstPoint.addEventListener("mouseover", () => {
-    console.log("chapter 2 first point");
-    rebellion.classList.toggle("show");
-  });
-
-  chapter2FirstPoint.addEventListener("click", () => {
-    rebellion.classList.toggle("show");
-  });
-
-  rebellion.addEventListener("mouseout", () => {
-    rebellion.classList.remove("show");
-  });
-}
-
-if (chapter2SecondPoint != null) {
-  chapter2SecondPoint.addEventListener("mouseover", () => {
-    console.log("chapter 2 second point");
-    protest.classList.toggle("show");
-  });
-
-  chapter2SecondPoint.addEventListener("click", () => {
-    protest.classList.toggle("show");
-  });
-
-  rebellion.addEventListener("mouseout", () => {
-    protest.classList.remove("show");
-  });
-}
