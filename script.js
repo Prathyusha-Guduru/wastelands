@@ -3,6 +3,7 @@ firstPoint = document.getElementById("first-point");
 thirdPoint = document.getElementById("third-point");
 chapter2FirstPoint = document.getElementById("chapter-2-first-point");
 chapter2SecondPoint = document.getElementById("chapter-2-second-point");
+chapter2ThirdPoint = document.getElementById("chapter-2-third-point");
 secondPoint = document.getElementById("second-point");
 bag = document.querySelector(".sticky-bag");
 mapPopup = document.querySelector(".map-popup");
@@ -358,29 +359,45 @@ document.querySelector(".play").addEventListener("click", () => {
 if (chapter2FirstPoint != null) {
   chapter2FirstPoint.addEventListener("mouseover", () => {
     console.log("chapter 2 first point");
-    rebellion.classList.toggle("show");
+    protest.classList.toggle("show");
   });
 
   chapter2FirstPoint.addEventListener("click", () => {
+    protest.classList.toggle("show");
+  });
+
+  protest.addEventListener("mouseout", () => {
+    protest.classList.remove("show");
+  });
+}
+
+if (chapter2SecondPoint != null) {
+  chapter2SecondPoint.addEventListener(
+    "mouseover",
+    () => {
+      chapter2SecondPoint.click();
+      console.log("radio hover");
+      audio.play();
+    },
+    false
+  );
+
+  chapter2SecondPoint.addEventListener("mouseout", () => {
+    audio.pause();
+  });
+}
+
+if (chapter2ThirdPoint != null) {
+  chapter2ThirdPoint.addEventListener("mouseover", () => {
+    console.log("chapter 2 Third point");
+    rebellion.classList.toggle("show");
+  });
+
+  chapter2ThirdPoint.addEventListener("click", () => {
     rebellion.classList.toggle("show");
   });
 
   rebellion.addEventListener("mouseout", () => {
     rebellion.classList.remove("show");
-  });
-}
-
-if (chapter2SecondPoint != null) {
-  chapter2SecondPoint.addEventListener("mouseover", () => {
-    console.log("chapter 2 second point");
-    protest.classList.toggle("show");
-  });
-
-  chapter2SecondPoint.addEventListener("click", () => {
-    protest.classList.toggle("show");
-  });
-
-  rebellion.addEventListener("mouseout", () => {
-    protest.classList.remove("show");
   });
 }
