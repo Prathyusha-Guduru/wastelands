@@ -1,8 +1,41 @@
 .chapter-2-landing-page {
   background: url(../chapter-2-landing.png) no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 .chapter-2-hero-text {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: flex-end;
+  // background-color: lawngreen;
+  h1 {
+    font-size: 5.5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    // background-color: aquamarine;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    // background-color: lightgray;
+    position: relative;
+    // left: 30px;
+  }
+
+  h3:first-of-type {
+    align-items: flex-start;
+    width: 100%;
+    right: 40px;
+    top: 15%;
+  }
+  h3:nth-of-type(2) {
+    left: 30px;
+    bottom: 15%;
+  }
+
   h1 {
     font-weight: 400;
     color: #ffffff !important;
@@ -94,4 +127,60 @@
 
 .chapter-2-mint-btn:hover {
   text-decoration: line-through !important;
+}
+
+@media screen and(max-width : 600px) {
+  .chapter-2-hero-text {
+    h3 {
+      transform: scale(0.8);
+    }
+    h1 {
+      transform: scale(0.6);
+    }
+  }
+  h3:first-of-type {
+    // background-color: lawngreen;
+    align-items: flex-start;
+    width: 100%;
+    // right: 0px !important;
+    right: 0 !important;
+    top: 15% !important;
+    left: 10%;
+  }
+
+  h3:nth-of-type(2) {
+    width: 100%;
+    // background-color: lightblue;
+    left: 40% !important;
+    // top: 10% !important;
+    // left: 50%;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 576px) {
+  .chapter-2-hero-text {
+    h3 {
+      transform: scale(0.8);
+    }
+    h1 {
+      transform: scale(0.6);
+    }
+  }
+  h3:first-of-type {
+    // background-color: lawngreen;
+    align-items: flex-start;
+    width: 100%;
+    // right: 0px !important;
+    right: 0 !important;
+    // top: 0% !important;/
+    left: 10%;
+  }
+
+  h3:nth-of-type(2) {
+    width: 100%;
+    // background-color: lightblue;
+    left: 45% !important;
+    // top: 10% !important;
+    // left: 50%;
+  }
 }
